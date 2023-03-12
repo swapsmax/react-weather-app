@@ -1,0 +1,32 @@
+:root {
+    --bodyColor1: "#000000";
+    --bodyColor2: "#FFFFFF";
+}
+
+body {
+  margin: 0;
+  font-family: "Roboto", Arial, sans-serif !important;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: linear-gradient(45deg, var(--bodyColor1), var(--bodyColor2)) no-repeat fixed;
+  background-size : "400% 400%";
+  animation : "gradient 25s ease infinite";
+
+}
+
+@keyframes gradient {
+  0% {
+      background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+};
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
